@@ -20,16 +20,15 @@ We can update the padding of each cell using [CellPadding](https://help.syncfusi
 #### C#
 Similar code as XAML
 ```C#
-public MainPage()
-{
-    InitializeComponent();
-    DataGridNumericColumn EmployeeIDColumn = new DataGridNumericColumn() { MappingName = "EmployeeID" , HeaderText = "Employee ID" , Format= "D" , CellPadding  = new Thickness(16,0,16,0), HeaderPadding = new Thickness(16,0,16,0) };
-    DataGridTextColumn NameColumn = new DataGridTextColumn() { MappingName = "Name", HeaderText = "Name",  CellPadding = new Thickness(16, 0, 16, 0), HeaderPadding = new Thickness(16, 0, 16, 0) };
-    DataGridTextColumn Title = new DataGridTextColumn() { MappingName = "Title", HeaderText = "Title", CellPadding = new Thickness(16, 0, 16, 0), HeaderPadding = new Thickness(16, 0, 16, 0) };
-    dataGrid.Columns.Add(EmployeeIDColumn);
-    dataGrid.Columns.Add(NameColumn);
-    dataGrid.Columns.Add(Title);
-}
+DataGridNumericColumn EmployeeIDColumn = new DataGridNumericColumn() { MappingName = "EmployeeID" , HeaderText = "Employee ID" , Format= "D" , CellPadding  = new Thickness(16,0,16,0), HeaderPadding = new Thickness(16,0,16,0) };
+
+DataGridTextColumn NameColumn = new DataGridTextColumn() { MappingName = "Name", HeaderText = "Name",  CellPadding = new Thickness(16, 0, 16, 0), HeaderPadding = new Thickness(16, 0, 16, 0) };
+
+DataGridTextColumn Title = new DataGridTextColumn() { MappingName = "Title", HeaderText = "Title", CellPadding = new Thickness(16, 0, 16, 0), HeaderPadding = new Thickness(16, 0, 16, 0) };
+
+dataGrid.Columns.Add(EmployeeIDColumn);
+dataGrid.Columns.Add(NameColumn);
+dataGrid.Columns.Add(Title);
 ```
 
 ![DataGrid padding](SfDataGrid_ColumnPadding.png)
